@@ -1,24 +1,14 @@
-# README
+# こんでないカフェ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+機能の大枠
+・GPSで近場の電源が使えて、かつ座れるカフェがわかる
+・席取り(いるよ、くるよ)機能
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+■ 画面構成
+1. MAP
+ - カフェのマッピングピン
+2. 個別カフェ情報
+ - いるよ, くるよボタン
+ - 混雑度グラフ
+3. DM画面
