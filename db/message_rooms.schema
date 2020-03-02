@@ -1,0 +1,10 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+create_table "message_rooms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.integer "stay_user_id", default: 0, null: false, comment: "いるよユーザー"
+  t.integer "going_user_id", default: 0, null: false, comment: "いくよユーザー"
+  t.integer "cafe_id", default: 0, null: false, comment: "ユーザー"
+  t.integer "room_status", default: 0, null: false, comment: "closeとかopenとか、いらんかも"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end

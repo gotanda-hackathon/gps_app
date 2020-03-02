@@ -1,0 +1,8 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+require 'cafe_crowded_points.schema'
+require 'cafe_customers.schema'
+require 'cafes.schema'
+require 'message_rooms.schema'
+require 'messages.schema'
+require 'users.schema'

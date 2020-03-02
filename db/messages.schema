@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.integer "message_room_id", default: 0, null: false, comment: "メッセージルーム"
+  t.text "content", comment: "メッセージルーム"
+  t.datetime "send_at", comment: "送信日時"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
