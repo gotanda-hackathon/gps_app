@@ -10,13 +10,13 @@ class InitMigration < ActiveRecord::Migration[5.1]
       t.string "tel", default: "", null: false, comment: "電話番号"
       t.string "sales_time", default: "", null: false, comment: "営業時間"
       t.string "shop_url", default: "", null: false, comment: "URL"
-      t.text "wifi_info", default: "", null: false, comment: "wifi情報"
-      t.text "smoking_info", default: "", null: false, comment: "喫煙情報"
-      t.text "review", default: "", null: false, comment: "レビュー"
-      t.text "recommend", default: "", null: false, comment: "おすすめポイント"
-      t.text "caution", default: "", null: false, comment: "注意事項"
-      t.text "remark", default: "", null: false, comment: "備考"
-      t.text "access_info", default: "", null: false, comment: "アクセス情報"
+      t.text "wifi_info", null: false, comment: "wifi情報"
+      t.text "smoking_info", null: false, comment: "喫煙情報"
+      t.text "review", null: false, comment: "レビュー"
+      t.text "recommend", null: false, comment: "おすすめポイント"
+      t.text "caution", null: false, comment: "注意事項"
+      t.text "remark", null: false, comment: "備考"
+      t.text "access_info", null: false, comment: "アクセス情報"
       t.timestamps
     end
 

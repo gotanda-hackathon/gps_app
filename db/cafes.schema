@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+create_table "cafes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.string "name", null: false, comment: "カフェ名"
+  t.string "pref", comment: "都道府県"
+  t.string "zip", default: "", null: false, comment: "郵便番号"
+  t.string "city", default: "", null: false, comment: "市区町村"
+  t.string "address", default: "", null: false, comment: "番地以降"
+  t.string "building", default: "", null: false, comment: "建物名"
+  t.string "tel", default: "", null: false, comment: "電話番号"
+  t.string "sales_time", default: "", null: false, comment: "営業時間"
+  t.string "shop_url", default: "", null: false, comment: "URL"
+  t.text "wifi_info", null: false, comment: "wifi情報"
+  t.text "smoking_info", null: false, comment: "喫煙情報"
+  t.text "review", null: false, comment: "レビュー"
+  t.text "recommend", null: false, comment: "おすすめポイント"
+  t.text "caution", null: false, comment: "注意事項"
+  t.text "remark", null: false, comment: "備考"
+  t.text "access_info", null: false, comment: "アクセス情報"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
